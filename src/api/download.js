@@ -15,7 +15,7 @@ export function DownloadApi(data,calback){
       return response.json()
     }).then(data=>{
       console.log("data:-----------------------",data)
-      calback(data.data)
+      calback(data.data.PATH)
 
     })
   
