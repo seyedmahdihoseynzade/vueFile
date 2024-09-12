@@ -8,7 +8,7 @@
                 <label for="">آدرس فایل</label>
                 <input v-model="link" type="text" class="bg-gray-200" placeholder="آدرس">
             </div>
-            <p class="text-center">{{ link }}</p>
+            <a class="text-center" :href="link">{{ link }}</a>
             <div @click="send" class="bg-green-100 px-[1.5rem] rounded-[2rem] cursor-pointer">{{statusBtn}}</div>
         </div>
     </div>
@@ -32,7 +32,7 @@ export default{
             "downLoadLink":link.value,
          },(data)=>{
            statusBtn.value="ارسال"
-           link.value = "view link:" + data
+           link.value = data
          })
         }
 
