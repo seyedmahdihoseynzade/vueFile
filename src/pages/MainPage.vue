@@ -8,7 +8,7 @@
                 <label for="">آدرس فایل</label>
                 <input v-model="link" type="text" class="bg-gray-200" placeholder="آدرس">
             </div>
-            <a class="text-center" :href="link">{{ link }}</a>
+            <a class="text-center" :href="link" target="_blank">{{ link }}</a>
             <div @click="send" class="bg-green-100 px-[1.5rem] rounded-[2rem] cursor-pointer">{{statusBtn}}</div>
         </div>
     </div>
